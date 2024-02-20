@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0",
     "react-scripts": "5.0.1",
+    "supertest": "^6.3.4",
     "typewriter-effect": "^2.21.0",
     "web-vitals": "^2.1.4"
   },
@@ -24,6 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
+    "cy:run": "cypress run",
+    "test:cy": "npm run cy:run",
+    "cy:open": "cypress open",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -47,5 +51,15 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
+    "babel-jest": "^29.7.0",
+    "cypress": "^13.6.4"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
 }

@@ -1,8 +1,9 @@
 const express = require("express");
+require ('openai/shims/node');
 const OpenAI = require("openai");
 const cors = require("cors");
 const app = express();
-const axios = require("axios");
+// const axios = require("axios");
 
 app.use(cors());
 app.use(express.json());
@@ -16,6 +17,9 @@ const openai = new OpenAI({
 app.post("/generate-quiz-questions", async (req, res) => {
   try {
     const { topic, expertise, numQuestions, questionStyle } = req.body;
+    if(!topic || !expertise || !numQuestions || !questionStyle) {
+      return res.status(400).json({ error: "Please provide all required fields." });
+    }
     const completion = await openai.chat.completions.create({
       messages: [
         {
@@ -51,3 +55,5 @@ app.get("/generated-questions", (req, res) => {
 });
 
 app.listen(5000, () => console.log("Server running on port 5000"));
+
+module.exports = app;
