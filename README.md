@@ -80,7 +80,7 @@ LRNR is a cutting-edge application powered by React, Node.js, and the OpenAI API
    ```
 4. **Install Required npm Packages**:
    ```bash
-   npm install react react-dom react-router-dom typewriter-effect bootstrap
+   npm install react react-dom react-router-dom typewriter-effect bootstrap cypress jess
    ```
 
 ### Additional Steps:
@@ -146,32 +146,21 @@ LRNR is a cutting-edge application powered by React, Node.js, and the OpenAI API
 
 
 
-## Learn More
+## Testing 
+ **Running the backend test**:
+ - In the Visual Studio terminal run the code
+```
+npm run test
+```
+-  This will run all four test for the backend. The quiz generation Api function and its error handling will be tested.
+  
+**Running the frontend test**:
+- In the Visual Studio terminal run the code
+```
+npm run cy:open
+```
+- This will test various routes and client side functionality.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
