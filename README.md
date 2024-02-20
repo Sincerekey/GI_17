@@ -80,7 +80,7 @@ LRNR is a cutting-edge application powered by React, Node.js, and the OpenAI API
    ```
 4. **Install Required npm Packages**:
    ```bash
-   npm install react react-dom react-router-dom typewriter-effect bootstrap cypress jess
+   npm install react react-dom react-router-dom typewriter-effect bootstrap cypress jess supertest
    ```
 
 ### Additional Steps:
